@@ -1,7 +1,5 @@
 # Uptrend
 
-## Download Uptrend
-
 Uptrend is a [Jekyll](http://jekyllrb.com/) theme which makes it easy to get a decent 
 looking personal Jekyll site up and running quickly. It works well with 
 [GitHub Pages](http://pages.github.com/) which offers free Jekyll hosting. If you 
@@ -17,14 +15,15 @@ of the theme in action, see [my website](http://baus.net).
 
 ## Installation
 
-If you have Jekyll on your machine the installation is rather trivial.
+If you have Jekyll on your machine the installation is relatively straight forward.
 
 ```
 
 ```
 
 Edit _config.yml to contain information about your site. Some of the information in the author section is used
-by the resume template. 
+by the resume template. If you are planning on using your own domain name with GitHub pages, then add the domain name
+to the CNAME file. 
 
 There are two static pages that you should modify (/about and /resume). The contents of these pages is specified
 in markdown, unlike most Jekyll templates which specify static files in pure HTML. The trick is they are processed 
@@ -33,7 +32,37 @@ as includes, and hence they are in the _includes directory.
 The /resume page is not linked from the main navigation, but you can give this link out to anyone you want to share it 
 with. The layout used on the page is a little more friendly for printing. 
 
-To deploy to github pages, you simply need to create a repo as follows:
+### Creating Posts
+
+To add posts, you need to create a directory called _posts. In it you have to create post files with names of the following form:
+
+```
+2012-06-28-a-new-post.md 
+```
+
+The file name must start with the date in the above format, and then a slug for the post followed by dashes.
+
+The post file itself should look contain [YAML front-matter](http://jekyllrb.com/docs/frontmatter/) in the following form:
+
+```
+---
+layout: layout
+title: Post title here.
+---
+```
+
+The body of the post should follow and should be in Markdown format.
+
+The posts can be added to repo with the following git command:
+
+```
+git add 2012-06-28-a-new-post.md 
+git commit -m "added post."
+```
+
+
+### Deploy
+To deploy to github pages, you simply need to push the repo to a speciallied named repo on GitHub:
 
 ```
 
