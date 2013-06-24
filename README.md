@@ -2,35 +2,38 @@
 
 Uptrend is a [Jekyll](http://jekyllrb.com/) theme which makes it easy to get a decent 
 looking personal Jekyll site up and running quickly. It works well with 
-[GitHub Pages](http://pages.github.com/) which offers free Jekyll hosting. If you 
-want to change providers, it is trivial to move your data since it is all stored in
-a Git repo. 
+[GitHub Pages](http://pages.github.com/). If you want to change providers, it is trivial 
+to move your data since it is all stored in a Git repo. 
 
 Uptrend started as a fork of Carlos Becker's [Up Theme](http://carlosbecker.com/posts/up-a-jekyll-theme/), which
 also uses ideas from [Jekyll Bootstrap](http://jekyllbootstrap.com/), but has deviated fairly significantly and 
-mostly shares some common typography elements. 
+mostly shares some common typographical elements. 
 
-While the theme uses Bootstrap 3 under the covers, I have attempted to make it not look bootstrappy. For an example
-of the theme in action, see [my website](http://baus.net). 
+While the theme uses [Bootstrap 3 WIP](https://github.com/twitter/bootstrap/tree/3.0.0-wip) under the covers, I 
+have attempted to make it not look bootstrappy. For an example of the theme in action, see [my website](http://baus.net). 
 
 ## Installation
 
-If you have Jekyll on your machine the installation is relatively straight forward.
+If you have [Jekyll installed](http://jekyllrb.com/docs/installation/), it is fairly easy to get Uptrend running.
+
+First clone the repo, and test out the basic theme locally:
 
 ```
-
+git clone git@github.com:baus/jekyll-uptrend.git
+cd jekyll-uptrend
+jekyll serve
 ```
 
-Edit _config.yml to contain information about your site. Some of the information in the author section is used
-by the resume template. If you are planning on using your own domain name with GitHub pages, then add the domain name
-to the CNAME file. 
+Edit _config.yml. Some of the information in the author section is used by the resume template. 
 
 There are two static pages that you should modify (/about and /resume). The contents of these pages is specified
-in markdown, unlike most Jekyll templates which specify static files in pure HTML. The trick is they are processed 
-as includes, and hence they are in the _includes directory. 
+in [Markdown](http://daringfireball.net/projects/markdown/), unlike most Jekyll templates which specify static 
+files in pure HTML. The trick is they are processed as includes, and hence they are in the _includes directory. 
 
 The /resume page is not linked from the main navigation, but you can give this link out to anyone you want to share it 
 with. The layout used on the page is a little more friendly for printing. 
+
+After updating _config.yml, 
 
 ### Creating Posts
 
@@ -61,12 +64,19 @@ git commit -m "added post."
 ```
 
 
-### Deploy
-To deploy to github pages, you simply need to push the repo to a speciallied named repo on GitHub:
+### Deploy to GitHub pages
+
+To deploy to GitHub pages, you simply need to push the repo to a [specially named repo](https://help.github.com/articles/user-organization-and-project-pages) on GitHub.
+
 
 ```
 
 ```
+
+### Using your own domain
+
+If you are planning on using your own domain name with GitHub pages, then add the domain name
+to the CNAME file. 
 
 ## Notes
 
