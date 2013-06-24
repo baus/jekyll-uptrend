@@ -1,4 +1,7 @@
-# Uptrend
+# Jekyll Uptrend
+
+Fork this project on [GitHub](https://github.com/baus/jekyll-uptrend).
+See a [live example](http://baus.net/).
 
 Fork this project on [GitHub](http://github.com/baus/jekyll-uptrend).
 
