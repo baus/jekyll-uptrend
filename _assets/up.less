@@ -1,0 +1,192 @@
+@import "bootstrap/less/bootstrap.less";
+
+// font-awesome
+@import "fontawesome/font-awesome.less";
+
+// pygments
+@import "pygments.less";
+
+@font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-size-base: 20px;
+@headings-font-weight: 100;
+
+// This effectively disables the navbar from being reactive.
+@grid-float-breakpoint: 0px;
+
+div.hero-unit {
+    padding-top: 125px;
+    background-image: url("/images/impala.jpg");
+    background-position: center;
+}
+
+.navbar-overrides ()
+{
+    font-weight: 100;
+    background-color: transparent;
+    max-width: 100%;
+}
+
+.navbar-brand {
+    .navbar-overrides;
+    color: #EEE;
+    text-transform: uppercase;
+    font-size: 32px;
+    text-shadow: 0 1px 0 #000;
+}
+
+div.navbar {
+    .navbar-overrides;
+    color: #222;
+}
+
+.nav {
+  > li {
+    > a.navbar-icon {
+	padding: 10px 3px;
+    }
+  }
+}
+
+
+.nav {
+  > li {
+    > a {
+      color: #555;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        background-color: @body-bg;
+      }
+    }
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 60;
+  margin-top: 20px;
+}
+
+h2,h3,h4,h5,h6 {
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 5px;
+}
+
+h1, .h1 { font-size: ceil(@font-size-base * 2.25); } 
+h2, .h2 { font-size: ceil(@font-size-base * 1.70); } 
+h3, .h3 { font-size: ceil(@font-size-base * 1.25); } 
+h4, .h4 { font-size: @font-size-base;} 
+h5, .h5 { font-size: ceil(@font-size-base * 0.85)}
+h6, .h6 { font-size: ceil(@font-size-base * 0.7); } 
+
+section.content {
+
+  height: 100%;
+  min-height: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
+  paddint-right: 10px;
+  img {
+    max-width: 70%;
+    max-height: 70%;
+    // box-shadow: 0 0 20px #bbb;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &.noclip {
+      clear: both;
+      // box-shadow: none;
+      display: inline-block;
+    }
+    // &.noshadow {
+    //   box-shadow: none;
+    // }
+  }
+  h1:first-child {
+    margin-top: 20px;
+  }
+  h1 a {
+    font-size: .6em;
+    font-weight: 100;
+  }
+  h1.thin {
+    font-size: 2em;
+    margin-top: 0;
+  }
+  h1.big.thin {
+    font-size: 3em;
+  }
+  section.byline {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    color: #999;
+  }
+  &.about p,
+  &.error {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 100;
+  }
+  &.error h1 {
+    color: #f5f5f5;
+    font-size: 10em;
+    font-weight: bold;
+    padding: .5em;
+    text-shadow: 0px 1px 5px #aaa;
+  }
+  div.pull {
+    padding-top: 20px;
+  }
+}
+
+
+ul.listing {
+  margin: 0 0 25px 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    padding: 7px 5px;
+    border-bottom: 1px solid #EEE;
+    span {
+      padding-top: 3px;
+      float: right;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #999;
+    }
+  }
+}
+
+
+#footer {
+  margin-top: 50px;
+  border-top: 1px solid #f5f5f5;
+  section.meta {
+    padding: 30px;
+    color: #EEE;
+    text-align: center;
+    a {
+      font-size: 0.8em;
+      color: #555;
+      text-decoration: none;
+      transition: color 0.25s ease-in;
+      -webkit-transition: color 0.25s ease-in;
+      &:hover {
+        color: #307EA9;
+      }
+    }
+  }
+  i.icon {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer .col-span-2.next {
+    margin-top: 30px;
+  }
+}

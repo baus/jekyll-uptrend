@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>{{ site.title }}{% if page.title %}: {{ page.title }}{% endif %}</title>
+
+  <meta name="author" content="{{ site.author.name }}" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'
+    rel='stylesheet' type='text/css'>
+
+  <link href="/css/resume.css" rel="stylesheet">
+
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>{{ site.author.name }}</h1>
+    <p><strong>{{ site.author.email }} &middot {{ site.production_url }}/ &middot @{{ site.author.twitter }} &middot {{ site.author.phone }}</strong></p>
+    {{ content }}
+  </div>
+  <div id="footer" class="hidden-print">
+    <section class="meta">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-2 col-offset-4">
+            <a href="https://twitter.com/{{ site.author.twitter }}">
+              <i class="icon icon-twitter icon-4x"></i>
+            </a>
+          </div>
+          <div class="col col-lg-2 next">
+            <a href="https://github.com/{{ site.author.github }}">
+              <i class="icon icon-github icon-4x"></i>   
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  </section>
+  </div>
+</body>
+</html>

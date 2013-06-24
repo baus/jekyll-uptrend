@@ -1,0 +1,1 @@
+The site uses a the Jekyll Uptrend theme is which is a based on Up, Jekyll Bootstrap, and Left.
