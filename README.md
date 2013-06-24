@@ -1,5 +1,7 @@
 # Uptrend
 
+Fork this project on [GitHub](http://github.com/baus/jekyll-uptrend).
+
 Uptrend is a [Jekyll](http://jekyllrb.com/) theme which makes it easy to get a decent 
 looking personal Jekyll site up and running quickly. It works well with 
 [GitHub Pages](http://pages.github.com/) which offers free Jekyll hosting. If you 
@@ -23,7 +25,7 @@ If you have Jekyll on your machine the installation is relatively straight forwa
 
 Edit _config.yml to contain information about your site. Some of the information in the author section is used
 by the resume template. If you are planning on using your own domain name with GitHub pages, then add the domain name
-to the CNAME file. 
+to the CNAME file.
 
 There are two static pages that you should modify (/about and /resume). The contents of these pages is specified
 in markdown, unlike most Jekyll templates which specify static files in pure HTML. The trick is they are processed 
