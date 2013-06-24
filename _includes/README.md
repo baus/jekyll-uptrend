@@ -3,8 +3,6 @@
 Fork this project on [GitHub](https://github.com/baus/jekyll-uptrend).
 See a [live example](http://baus.net/).
 
-Fork this project on [GitHub](http://github.com/baus/jekyll-uptrend).
-
 Uptrend is a [Jekyll](http://jekyllrb.com/) theme which makes it easy to get a decent 
 looking personal Jekyll site up and running quickly. It works well with 
 [GitHub Pages](http://pages.github.com/). If you want to change providers, it is trivial 
