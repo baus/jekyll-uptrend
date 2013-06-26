@@ -3,6 +3,9 @@ layout: layout
 ---
 
 <section class="content">
+{% capture document %}{% include about.md %}{% endcapture %}
+{{ document | markdownify }}
+
   <ul class="listing">
     {% for post in site.posts %}
     <li>
