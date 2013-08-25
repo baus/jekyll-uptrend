@@ -4,13 +4,13 @@ redcarpet:
   extensions: ["smart"]
 pygments: true
 permalink: /posts/:title
-title : The Title of Your Blog Here
+title: The Title of Your Blog Here
 # Note leave off trailing /
 production_url : http://blogresideshere.com
 description: This is used in the atom feed
-author :
-  name : Joe Blow
-  github : joeblow
-  twitter : joeblow
+author:
+  name: Joe Blow
+  github: joeblow
+  twitter: joeblow
   email: joe@blow.com
   phone: +1 555-867-5309
