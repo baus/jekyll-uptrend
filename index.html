@@ -2,5 +2,24 @@
 layout: navless
 ---
 
+<<<<<<< HEAD
 {% capture document %}{% include README.md %}{% endcapture %}
 {{ document | markdownify }}
+=======
+<section class="content">
+{% capture document %}{% include about.md %}{% endcapture %}
+{{ document | markdownify }}
+
+<div class="text-center">
+<i class="icon-circle"></i>&nbsp&nbsp&nbsp&nbsp<i class="icon-circle"></i>&nbsp&nbsp&nbsp&nbsp<i class="icon-circle"></i>
+</div>
+<h1>Posts</h1>
+  <ul class="listing">
+    {% for post in site.posts %}
+    <li>
+      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+>>>>>>> uptrend
