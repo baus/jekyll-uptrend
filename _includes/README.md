@@ -12,7 +12,7 @@ Uptrend started as a fork of Carlos Becker's [Up Theme](http://carlosbecker.com/
 also uses ideas from [Jekyll Bootstrap](http://jekyllbootstrap.com/), but has deviated fairly significantly and 
 mostly shares some common typographical elements. 
 
-While the theme uses [Bootstrap 3 WIP](https://github.com/twitter/bootstrap/tree/3.0.0-wip) under the covers, I 
+While the theme uses [Bootstrap 3](https://github.com/twbs/bootstrap/) under the covers, I 
 have attempted to make it not look bootstrappy. For an example of the theme in action, see [my website](http://baus.net). 
 
 ## Installation
